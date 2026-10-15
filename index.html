@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tabung">
+<meta name="theme-color" content="#DCE3EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101A2E" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<title>Tabung</title>
+<style>html,body{margin:0;background:#DCE3EA}@media (prefers-color-scheme:dark){html,body{background:#101A2E}}</style>
+<script>
+/* opens the app in the language last used; the first time, the phone's language */
+var l;try{l=localStorage.getItem('tabung-lang')}catch(e){}
+if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';
+location.replace(l+'.html');
+</script>
+</head>
+<body><noscript>Tabung needs JavaScript.</noscript></body>
+</html>
